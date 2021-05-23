@@ -1,0 +1,11 @@
+<div class="ui accordion styled" >
+    <ng-container *ngFor="let acc of accordian;let i=index">
+    <div (click)="onClick(i)" class=" title" [ngClass]="{active: i===openedIndexItem}">
+      <i  class="dropdown icon "></i>
+      {{acc.title}}
+    </div>
+    <div [ngClass]="{active: i===openedIndexItem}" class="content">
+      <p>{{acc.desc}}</p>
+    </div>
+</ng-container>
+  </div>

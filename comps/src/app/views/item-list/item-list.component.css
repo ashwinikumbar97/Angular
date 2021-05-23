@@ -1,0 +1,12 @@
+:root{
+    --color: blue;
+}
+
+.description{
+    text-transform: capitalize;
+    color: var(--color);
+}
+a.header::before{
+   content: "-";
+   color: var(--color);
+}

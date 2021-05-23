@@ -1,0 +1,12 @@
+<app-divider>Modules</app-divider>
+<button  (click)="onClick()">Show Modal</button>
+<app-modal (close)="onClick()" *ngIf="modalOpen"> 
+
+<div modaltitle> Modal View</div>
+<p>mai lorem use karungi . jo krna hai krlena huhhh...</p>
+<ng-container modalFooter>
+    <button class="ui button" (click)="onClick()">Close Me!</button>
+</ng-container>
+</app-modal>
+<app-divider>Accordian</app-divider>
+<app-accordian [accordian]="accordian"></app-accordian>

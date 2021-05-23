@@ -1,0 +1,9 @@
+.cards{
+    width:350px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.media-content {
+    overflow-y: hidden;
+}
