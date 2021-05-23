@@ -1,0 +1,19 @@
+.container{
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px #888888;
+    margin: auto;
+    width: 50%;
+   margin-top: 100px;
+}
+
+.incorrect{
+    color: brown;
+    font-weight: bold;
+}
+
+.correct{
+    color: chartreuse;
+}
+.pending{
+    color: gray;
+}
