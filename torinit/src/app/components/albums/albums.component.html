@@ -1,0 +1,33 @@
+  <div style="width: 30%; float:left">
+    <table class="table">
+      <thead>
+          <tr>
+            <th></th>
+              <th style="width: 1%" (click)="sort('id')" >Title&nbsp;<i class="fa fa-sort"></i></th>
+              <th (click)="sort('category')">count&nbsp;<i class="fa fa-sort"></i></th>
+              <th >PhotoView</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of albums | orderBy : key :reverse  let i=index" >
+          <td style="width: 1%">{{i+1}}</td> 
+          <td style="width: 40%"> {{item.title}} </td>
+          <td>{{photosCount[i]}}</td>
+          <td><a style="text-decoration:underline;color:blue;" (click)="onclick(i+1)">Edit</a></td>
+      </tr>
+      </tbody>
+    </table>
+ </div>
+ 
+ <div  style="width: 70%; float:right">
+<div class="center"> 
+  <!-- <ng-container *ngIf="!showPhotos" >
+    <a type="submit">Select any album <i class="fa fa-search" ></i></a>
+  </ng-container> -->
+  <ng-container >
+        <div  class="wrapper" >
+          <img *ngFor="let url of photos" [src]="url.thumbnailUrl" style="width:30px;height:30px;" >  
+        </div>
+   </ng-container>
+</div>
+ </div>
